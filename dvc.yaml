@@ -1,0 +1,6 @@
+stages:
+  prepare-d:
+    cmd: scripts/cleaner.py -d data/train.csv -d data/dore.csv
+  train_set:
+    cmd: scripts/cleaner.py -d data/train.csv -d data/dore.csv-o data/preparedpython
+      scripts/cleaner.py data/train.csv data/test.csv
